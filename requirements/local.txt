@@ -1,0 +1,23 @@
+-r base.txt
+
+# test
+ipdb
+psycopg2
+mypy
+django-stubs
+pytest
+pytest-sugar
+djangorestframework-stubs
+
+# code quality
+flake8
+isort
+black
+pre-commit
+
+# django dev tools
+django-debug-toolbar
+django-extensions
+django-coverage-plugin
+pytest-django
+
