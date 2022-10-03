@@ -16,13 +16,13 @@ services:
       - ./.envs/.production/.django
       - ./.envs/.production/.postgres
 
-    nginx:
-      build:
-        context: .
-        dockerfile: ./compose/production/nginx/Dockerfile
-      volumes:
-        - static:/static
-      ports:
-        - "80:80"
-      depends_on:
-        - django
+  nginx:
+    build:
+      context: .
+      dockerfile: ./compose/production/nginx/Dockerfile
+    volumes:
+      - static:/static
+    ports:
+      - "80:80"
+    depends_on:
+      - django
